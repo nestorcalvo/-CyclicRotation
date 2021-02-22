@@ -1,6 +1,8 @@
 def solution(A, K):
     # write your code in Python 3.6
     temp = A[:]
+    if len(A) == 0:
+        return A
     if K >= len(A) or K == 0:
         K = K % len(A)
         if K == 0:
